@@ -1,0 +1,12 @@
+# PyTorch should be installed separately first, matching your CUDA version.
+# Visit https://pytorch.org/get-started/locally/
+# Example for CUDA 12.1:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+bitsandbytes>=0.41.1 # Check Unsloth docs for recommended version on Windows
+unsloth[llama,gemma] @ git+https://github.com/unslothai/unsloth.git
+trl>=0.8.3
+transformers>=4.38.0
+datasets>=2.16.0
+accelerate>=0.27.0
+matplotlib
